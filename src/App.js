@@ -1,13 +1,30 @@
 import React from 'react';
-import axios from 'axios'
+import axios from 'axios';
+import StartMenu from './StartMenu';
+import './App.css'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
-  const API_KEY = process.env.REACT_APP_QUIZ_API_KEY;
 
   return (
-    <>
-      
-    </>
+    <div className="container">
+      <Router> 
+          <Switch>
+              <Route exact  path="/game">
+                
+                <h1>START GAME</h1>
+              </Route>
+              <Route path="/">
+                <StartMenu />
+              </Route>
+          </Switch>
+      </Router>
+    </div>
   );
 }
 

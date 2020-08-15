@@ -1,0 +1,42 @@
+:root {
+    --accent-color: #64FFDD;
+    --secondary-color: #122043;
+}
+.start-menu {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    justify-content: space-between;
+}
+.start-menu > h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+.start-menu > form{
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    justify-content: space-between;
+}
+.start-menu > form select,
+.start-menu > form option {
+    font-size: 1.1em;
+    padding: 0.2em 0.4em;
+    background-color: var(--accent-color);
+}
+.start-menu > form > button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
+    outline: none;
+    border-radius: 20px;
+    transition: color 100ms
+}
+.start-menu > form > button:hover{
+    color: rgba(192, 192, 192, 1)
+}
