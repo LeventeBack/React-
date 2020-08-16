@@ -1,0 +1,11 @@
+.quiz-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    grid-template-rows: 200px repeat(2, 1fr);
+    grid-gap: 2rem;
+    font-size: 1.7rem;
+    padding: 30px 100px;
+}

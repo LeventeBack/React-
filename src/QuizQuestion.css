@@ -1,0 +1,27 @@
+:root {
+    --accent-color: #64ffddb4;
+    --secondary-color: #122043;
+}
+.question {
+    grid-column: span 2;
+    text-align: center;
+    align-self: center;
+}
+.option {
+    background-color: var(--accent-color);
+    padding: .8em;
+    text-align: center;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    align-self: end;
+    cursor: pointer;
+}
+.option:nth-child(4),
+.option:nth-child(5) {
+    align-self: start;
+}
+.option:hover {
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+}

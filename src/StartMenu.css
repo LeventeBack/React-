@@ -7,6 +7,7 @@
     flex-direction: column;
     min-height: 280px;
     justify-content: space-between;
+    min-width: 330px;
 }
 .start-menu > h1 {
     text-align: center;
@@ -23,21 +24,28 @@
 }
 .start-menu > form select,
 .start-menu > form option {
-    font-size: 1.1em;
-    padding: 0.2em 0.4em;
+    font-size: 1em;
+    padding: 0.3em 0.4em;
     background-color: var(--accent-color);
     max-width: 98vw;
+    width: 100%;
 }
-.start-menu > form > button {
+.start-menu > form > a {
+    text-decoration: none;
+}
+.start-menu > form button {
     background-color: var(--secondary-color);
     color: white;
-    padding: 10px 0;
-    font-size: 1.5rem;
+    padding: 10px ;
+    font-size: 1.3rem;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, .5);
     outline: none;
     border-radius: 20px;
-    transition: color 100ms
+    transition: color 100ms;
+    display: block;
+    width: 60%;
+    margin: 0  auto;
 }
-.start-menu > form > button:hover{
+.start-menu > form  button:hover{
     color: rgba(192, 192, 192, 1)
 }
