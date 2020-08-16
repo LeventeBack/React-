@@ -26,6 +26,7 @@
     font-size: 1.1em;
     padding: 0.2em 0.4em;
     background-color: var(--accent-color);
+    max-width: 98vw;
 }
 .start-menu > form > button {
     background-color: var(--secondary-color);
