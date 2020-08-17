@@ -24,11 +24,10 @@ function App() {
       })
   }
 
-  //console.log(quizData)
   return (
     <div className="container">        
           {!quizData && <StartMenu getQuizdata={getQuizdata} />}
-          {quizData && <QuizController quizData={quizData} />}
+          {quizData && <QuizController quizData={quizData} setQuizData={setQuizData}/>}
     </div>
   );
 }

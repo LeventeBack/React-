@@ -1,3 +1,7 @@
+:root {
+    --accent-color: #64FFDD;
+    --secondary-color: #122043;
+}
 .quiz-container {
     position: fixed;
     height: 100%;
@@ -8,4 +12,31 @@
     grid-gap: 2rem;
     font-size: 1.7rem;
     padding: 30px 100px;
+}
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 45%;
+}
+.results > .text {
+    font-size: 3rem;
+}
+.results > .score {
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+
+.results > .restart {
+    background-color: var(--accent-color);
+    padding: 0.5em 1em;
+    font-size: 1.5rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 0.8em;
+}
+.results > .restart:hover {
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
 }
